@@ -100,7 +100,6 @@ export default {
           this.products = response.data.products
           const total = response.data.totalprice
           this.totalprice = total
-          console.log(this.totalprice)
           this.loading = false
         })
         .catch(error => {

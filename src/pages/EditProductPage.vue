@@ -6,14 +6,6 @@
           <div class="col-md-8 offset-md-2 col-xs-12 q-pl-md q-pr-md q-pt-sm">
             <q-card class="bg-white text-black">
               <div class="row">
-                <!-- <div class="col-md-6 col-xs-12">
-                  <div class="row q-pt-md q-pb-md bg-teal-5">
-                    <div class="col-md-8 offset-2 col-xs-8">
-                      <q-img spinner-color="white" placeholder-src="/img/form.png" src="/img/form.png">
-                      </q-img>
-                    </div>
-                  </div>
-                </div> -->
                 <v-card-section class="text-blue-grey-14 q-pa-md">
                   <div class="text-h4">Edit Product</div>
                 </v-card-section>
@@ -42,21 +34,6 @@
                     :options="categories"
                     label="Category"
                      />
-
-                    <!-- <q-select
-                    filled
-                    v-model="data.category_id"
-                    :options="categories"
-                    label="Category"
-                    :rules="[ val => val && val.length > 0 || 'Input your Category' ]" /> -->
-<!--
-                    <q-input
-                      filled
-                      v-model="data.category_id"
-                      label="Category"
-                      lazy-rules
-                      :rules="[ val => val && val.length > 0 || 'Input your Quantity' ]"
-                    /> -->
 
                     <q-input
                       filled
@@ -117,7 +94,6 @@ export default {
         console.log(this.data)
       })
       .catch(err => {
-        console.log(err)
       })
     },
     editProduct() {

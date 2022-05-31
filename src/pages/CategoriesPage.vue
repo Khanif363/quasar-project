@@ -63,7 +63,6 @@ export default {
         .then(response => {
           this.categories = response.data.categories
           this.loading = false
-          console.log(this.categories)
         })
         .catch(error => {
           this.$q.notify({

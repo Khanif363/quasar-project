@@ -1,11 +1,6 @@
 <template>
   <q-page class="flex flex-center">
-    <!-- <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    > -->
-    <h2 class="text-blue">WELCOME TO DASHBOARD</h2>
+    <h2 class="text-blue"><strong>WELCOME TO DASHBOARD</strong></h2>
   </q-page>
 </template>
 
@@ -20,11 +15,11 @@ export default defineComponent({
   methods: {
     alert (message) {
      this.$q.notify({
-            color: 'positive',
-            message: message,
-            icon: 'home',
-            position: 'top',
-          })
+        color: 'positive',
+        message: message,
+        icon: 'home',
+        position: 'top',
+      })
     }
   },
 })
